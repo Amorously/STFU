@@ -45,7 +45,7 @@ internal static class BoxColliderPseudofix
 
     private static void OnEnterLevel()
     {
-        foreach (var kvp in AffectedBoxColliders) // return original size/scale
+        foreach (var kvp in AffectedBoxColliders) // return original size/scale, i give up it's so over
         {
             var box = kvp.Key;
             var (origScale, origSize) = kvp.Value;

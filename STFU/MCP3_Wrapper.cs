@@ -50,7 +50,7 @@ internal static class MCP3_Wrapper
         }
     }
 
-    [HarmonyTranspiler]
+    [HarmonyTranspiler] // i wanted to learn transpilers and it works, shrugs
     private static IEnumerable<CodeInstruction> Transpile_Lspam(IEnumerable<CodeInstruction> instructions, MethodBase __originalMethod)
     {
         yield return new(OpCodes.Ldstr, __originalMethod.Name); // string method name
